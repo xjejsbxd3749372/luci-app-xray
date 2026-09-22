@@ -27,6 +27,11 @@ jobs:
             sdk_url_path: https://downloads.openwrt.org/releases/25.12.2/targets/x86/64
             sdk_name: -sdk-25.12.2-x86-64_
 
+          - id: 25.12
+            arch: x86_64
+            sdk_url_path: https://downloads.openwrt.org/releases/25.12.5/ramips/mt7621/
+            sdk_name: -sdk-25.12.2-ramips-mt7621_
+
     env:
       SDK_URL_PATH: ${{ matrix.sdk_url_path }}
       SDK_NAME: ${{ matrix.sdk_name }}
